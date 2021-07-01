@@ -13,10 +13,5 @@
         "type": "image/png",
         "sizes": "512X512"
       }
-      {
-      "src": "assets/img/sigmalogo512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-      }
     ]
   }
