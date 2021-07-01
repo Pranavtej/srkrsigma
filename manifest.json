@@ -8,7 +8,7 @@
     "icons": [
     
       {
-        "src": "/assets/img/sigmalogo.png", 
+        "src": "sigmalogo.png", 
         "type": "image/png",
         "sizes": "512X512"
       }
