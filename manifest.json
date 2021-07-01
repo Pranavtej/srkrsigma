@@ -1,16 +1,21 @@
 
 {"short_name":"SrkrSigma",
  "name":"SrkrSigma",
- "icons":[
-     {"src":"/assets/img/sigmalogo.png",
+ "icons":
+ [
+     {
+      "src":"/assets/img/sigmalogo.png",
       "type":"image/png",
-      "sizes":"512x512"}
+      "sizes":"512x512"
+     }
      
-     {"src":"/assets/img/sigma.png",
+     {
+      "src":"/assets/img/sigma.png",
      "type":"image/png",
      "sizes":"520x162"
      }
 ]
-"background_color":"rgb(255,255,255)",
+"background_color" : "#ffffff",
 "theme_color":"rgb(255,255,255)",
-"display":"fullscreen"}
+"display":"fullscreen"
+}
