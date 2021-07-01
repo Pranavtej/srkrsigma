@@ -5,8 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>srkrsigma</title>
+    <link rel="icon" type="image/png" sizes="320x320" href="assets/img/Untitled%20design%20(16).png">
+    <link rel="icon" type="image/png" sizes="320x320" href="assets/img/Untitled%20design%20(16).png">
     <link rel="icon" type="image/png" sizes="520x162" href="assets/img/sigma.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika:400,500,600,700&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
@@ -25,6 +28,8 @@
     <link rel="stylesheet" href="assets/css/Social-Icons.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/Team-Boxed.css">
+    <link rel="service-worker" href="service-worker.js">
+    <link rel="manifest" href="manifest.json">
 </head>
 
 <body style="height: 2018px;background: #eeeeee;">
@@ -141,6 +146,27 @@
             </div>
         </div>
     </footer>
+   
+        <script>
+
+window.addEventListener('load', () => {
+    registerSW();
+});
+
+
+
+async function registerSW() {
+    if ('serviceWorker' in navigator) {
+        try {
+            await navigator.serviceWorker.register('./service-worker.js');
+        } catch (e) {
+            console.log(`SW registration failed`);
+        }
+    }
+}
+
+</script>
+   
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>

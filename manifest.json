@@ -1,0 +1,16 @@
+{
+    "name": " SrkrSigma",
+    "short_name": " SrkrSigma",
+    "theme_color": "#f3f0d7",
+    "background_color": "#f3f0d7",
+    "display": "standalone",
+    "start_url": ".",
+    "icons": [
+    
+      {
+        "src": "/assets/img/sigmalogo.png", 
+        "type": "image/png",
+        "sizes": "512X512"
+      }
+    ]
+  }
