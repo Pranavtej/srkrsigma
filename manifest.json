@@ -1,8 +1,8 @@
 {
     "name": " SrkrSigma",
     "short_name": " SrkrSigma",
-    "theme_color": "#f3f0d7",
-    "background_color": "#f3f0d7",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
     "display": "standalone",
     "start_url": ".",
     "icons": [
