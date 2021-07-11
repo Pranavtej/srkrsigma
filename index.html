@@ -30,6 +30,25 @@
 </head>
 
 <body style="height: 2018px;background: #eeeeee;">
+    <script>
+
+        window.addEventListener('load', () => {
+            registerSW();
+        });
+
+
+
+        async function registerSW() {
+            if ('serviceWorker' in navigator) {
+                try {
+                    await navigator.serviceWorker.register('./service-worker.js');
+                } catch (e) {
+                    console.log(`SW registration failed`);
+                }
+            }
+        }
+
+    </script>
     <nav class="navbar navbar-light navbar-expand-md fixed-top visible navigation-clean-button" style="height: 91px;background: #ffffff;border-radius: 0;box-shadow: 0px 0px 0px 0px;border: 2px none rgb(211,211,211);padding-top: 10px;">
         <div class="container-fluid">
             <div class="brands"><a href="#" style="height: 76px;width: 191.062px;padding: 10px -11px;background: #ffffff;padding-left: -42px;padding-top: 8px;padding-right: 0;"> <img src="assets/img/sigma.png" style="height: 48px;"></a></div><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="height: 37px;background: #ffffff;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
